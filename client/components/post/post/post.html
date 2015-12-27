@@ -1,0 +1,7 @@
+<div class="masonry-brick" style="width: 200px;">
+    <img ng-src="{{ postDirCtrl.post.image }}" alt="{{ postDirCtrl.post.description }}" err-src="http://placehold.it/200x200" class="img-responsive">
+    {{ postDirCtrl.post.description }}
+    by <a ui-sref="wall({id: postDirCtrl.post.User._id})">{{ postDirCtrl.post.User.name }}</a>
+    <button ng-click="postDirCtrl.like()" class="btn btn-sm btn-danger" ng-class="{active: postDirCtrl.post.Likes.length}"><i class="glyphicon glyphicon-heart"></i> {{ postDirCtrl.post.likesCount || 0 }} Likes</button>
+    <button class="btn btn-sm btn-default" ng-show="postDirCtrl.post.User._id === postDirCtrl.currentUser._id" ng-click="postDirCtrl.remove({post: post})"><i class="glyphicon glyphicon-trash"></i> Remove</button>
+</div>
