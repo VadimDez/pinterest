@@ -25,7 +25,7 @@ class PostDirectiveCtrl {
   like() {
     this.combinedFunction()
       .then(data => {
-        this.updateCb({post: this.post, data: data.data});
+        this.post = data.data;
       });
   }
 
@@ -44,7 +44,6 @@ angular.module('pinterestApp')
       scope: {
         post: '=',
         removeCb: '&',
-        updateCb: '&'
       },
       restrict: 'E',
       templateUrl: 'components/post/post/post.html',

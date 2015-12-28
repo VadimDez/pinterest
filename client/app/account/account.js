@@ -11,12 +11,12 @@ angular.module('pinterestApp')
       })
       .state('logout', {
         url: '/logout?referrer',
-        referrer: 'main',
+        referrer: 'posts',
         template: '',
         controller: function($state, Auth) {
           var referrer = $state.params.referrer ||
                           $state.current.referrer ||
-                          'main';
+                          'posts';
           Auth.logout();
           $state.go(referrer);
         }

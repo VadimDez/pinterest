@@ -14,7 +14,7 @@ angular.module('pinterestApp', [
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/posts');
+      .otherwise('/');
 
     $locationProvider.html5Mode(true);
   });

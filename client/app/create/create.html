@@ -1,21 +1,23 @@
 <navbar></navbar>
 <div class="container">
-    <form name="createForm" class="form" ng-submit="createCtrl.create()" novalidate>
+    <div class="well">
+        <form name="createForm" class="form" ng-submit="createCtrl.create()" novalidate>
 
-        <div class="row">
-            <img ng-src="{{ createCtrl.post.image }}" class="col-sm-12 img-responsive" alt="" err-src="{{(createCtrl.post.image) ? 'http://placehold.it/200x200' : '' }}">
-        </div>
-        <div class="form-group">
-            <label>Image</label>
-            <input type="text" class="form-control" ng-model="createCtrl.post.image" required>
-        </div>
+            <div class="row">
+                <img ng-src="{{ createCtrl.post.image }}" class="col-sm-12 img-responsive" alt="" err-src="{{(createCtrl.post.image) ? 'http://placehold.it/200x200' : '' }}">
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input type="text" class="form-control" ng-model="createCtrl.post.image" required>
+            </div>
 
-        <div class="form-group">
-            <label>Description</label>
-            <input type="text" class="form-control" ng-model="createCtrl.post.description" required>
-        </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" ng-model="createCtrl.post.description" required>
+            </div>
 
-        <button ng-disabled="!createForm.$valid" class="btn btn-primary">Create</button>
-    </form>
+            <button ng-disabled="!createForm.$valid" class="btn btn-primary">Create</button>
+        </form>
+    </div>
 </div>
 <footer></footer>

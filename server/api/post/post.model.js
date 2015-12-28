@@ -12,7 +12,7 @@ export default function(sequelize, DataTypes) {
     description: DataTypes.TEXT,
     created_at: {
       type: DataTypes.DATE,
-      defaultValue: sequelize.NOW
+      defaultValue: Date.now()
     }
   });
 }

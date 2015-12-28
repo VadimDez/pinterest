@@ -85,7 +85,10 @@ function getSelectQuery(user) {
         'likesCount'
       ]]
     },
-    include: include
+    include: include,
+    order: [
+      ['created_at', 'DESC']
+    ]
   };
 }
 
@@ -121,6 +124,8 @@ export function show(req, res) {
 export function create(req, res) {
   var post = req.body;
   post.UserId = req.user._id;
+  post.created_at = Date.now();
+
   Post.create(req.body)
     .then(responseWithResult(res, 201))
     .catch(handleError(res));
