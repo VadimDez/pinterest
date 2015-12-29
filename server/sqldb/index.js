@@ -16,7 +16,6 @@ var db = {
 // Insert models below
 db.Like = db.sequelize.import('../api/like/like.model');
 db.Post = db.sequelize.import('../api/post/post.model');
-db.Thing = db.sequelize.import('../api/thing/thing.model');
 db.User = db.sequelize.import('../api/user/user.model');
 
 // relations
