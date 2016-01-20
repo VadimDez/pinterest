@@ -8,6 +8,7 @@ class CreateCtrl {
 
     Auth.getCurrentUser(user => {
       this.currentUser = user;
+      this.post.User = user;
     });
   }
 

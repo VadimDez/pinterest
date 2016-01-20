@@ -4,19 +4,23 @@
         <form name="createForm" class="form" ng-submit="createCtrl.create()" novalidate>
 
             <div class="row">
-                <img ng-src="{{ createCtrl.post.image }}" class="col-sm-12 img-responsive" alt="" err-src="{{(createCtrl.post.image) ? 'http://placehold.it/200x200' : '' }}">
-            </div>
-            <div class="form-group">
-                <label>Image</label>
-                <input type="text" class="form-control" ng-model="createCtrl.post.image" required>
-            </div>
+                <div class="col-md-3" masonry>
+                    <post post="createCtrl.post"></post>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label>Image</label>
+                        <input type="text" class="form-control" ng-model="createCtrl.post.image" required>
+                    </div>
 
-            <div class="form-group">
-                <label>Description</label>
-                <input type="text" class="form-control" ng-model="createCtrl.post.description" required>
-            </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" class="form-control" ng-model="createCtrl.post.description" required>
+                    </div>
 
-            <button ng-disabled="!createForm.$valid" class="btn btn-primary">Create</button>
+                    <button ng-disabled="!createForm.$valid" class="btn btn-primary">Create</button>
+                </div>
+            </div>
         </form>
     </div>
 </div>

@@ -43,7 +43,7 @@ angular.module('pinterestApp')
     return {
       scope: {
         post: '=',
-        removeCb: '&',
+        removeCb: '&'
       },
       restrict: 'E',
       templateUrl: 'components/post/post/post.html',
