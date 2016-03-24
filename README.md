@@ -23,3 +23,12 @@ You can find configurations under
 ```
 /server/config/enviroment
 ```
+
+## Uses
+
+- NodeJS
+- AngularJS
+- SCSS
+- Karma
+- Protractor
+- Yeoman
