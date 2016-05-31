@@ -109,16 +109,20 @@ export function changePassword(req, res, next) {
     }
   })
     .then(user => {
-      if (user.authenticate(oldPass)) {
-        user.password = newPass;
-        return user.save()
-          .then(() => {
-            res.status(204).end();
-          })
-          .catch(validationError(res));
-      } else {
+      if (!user.authenticate(oldPass)) {
         return res.status(403).end();
       }
+
+      if (user.email === 'test@example.com') {
+        return res.status(403).end();
+      }
+      
+      user.password = newPass;
+      return user.save()
+        .then(() => {
+          res.status(204).end();
+        })
+        .catch(validationError(res));
     });
 }
 
