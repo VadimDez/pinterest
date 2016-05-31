@@ -117,7 +117,7 @@ User.sync()
         role: 'user',
         name: 'Test',
         email: 'test@example.com',
-        password: 'superpassword123'
+        password: 'test'
       });
     });
   });
