@@ -103,4 +103,21 @@ User.sync()
         console.log('finished populating user vadym');
       });
     });
+
+
+    User.find({
+      email: 'test@example.com'
+    }).then(user => {
+      if (user) {
+        return;
+      }
+
+      User.create({
+        provider: 'local',
+        role: 'user',
+        name: 'Test',
+        email: 'test@example.com',
+        password: 'superpassword123'
+      });
+    });
   });
