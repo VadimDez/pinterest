@@ -27,6 +27,7 @@ body {
 
 // Component styles are injected through grunt
 // injector
+@import 'account/login/login.scss';
 @import 'admin/admin.scss';
 @import 'create/create.scss';
 @import 'posts/posts.scss';
