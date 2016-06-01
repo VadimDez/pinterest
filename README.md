@@ -1,8 +1,10 @@
-# pinterest
+# Pinterest
 
-FreeCodeCamp project
+Pinterest clone, part of FreeCodeCamp projects.
 
-## Run
+[Demo page](http://thepinterest.herokuapp.com/)
+
+### Run
 
 Install dependencies
 
@@ -24,7 +26,7 @@ You can find configurations under
 /server/config/enviroment
 ```
 
-## Uses
+### Uses
 
 - NodeJS
 - AngularJS
@@ -32,3 +34,6 @@ You can find configurations under
 - Karma
 - Protractor
 - Yeoman
+
+### License
+MIT © Vadym Yatsyuk
