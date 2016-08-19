@@ -36,4 +36,5 @@ You can find configurations under
 - Yeoman
 
 ### License
-MIT © Vadym Yatsyuk
+
+[MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
