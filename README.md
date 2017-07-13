@@ -4,6 +4,8 @@ Pinterest clone, part of FreeCodeCamp projects.
 
 [Demo page](http://thepinterest.herokuapp.com/)
 
+![https://user-images.githubusercontent.com/3748453/28166970-3201b9a6-67da-11e7-9e96-ae0ba0ac9dd8.png](https://user-images.githubusercontent.com/3748453/28166970-3201b9a6-67da-11e7-9e96-ae0ba0ac9dd8.png)
+
 ### Run
 
 Install dependencies
